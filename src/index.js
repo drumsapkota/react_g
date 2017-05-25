@@ -32,7 +32,7 @@ let data= [
 const CardList = (props) => {
   return(
     <div>
-      {props.cards.map(card => <Card name={card.name} company={card.company} avatar_url={card.avatar_url} />)}
+      {props.cards.map(card => <Card {...card} />)}
     </div>
     );
 }
